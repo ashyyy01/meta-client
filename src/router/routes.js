@@ -1,5 +1,6 @@
 import DashBoard from '../components/home/DashBoard.vue'
 import LogIn from '../components/sign-in/LogIn.vue'
+import DataStream from '../components/dataStream/dataStream.vue'
 
 const routes = [
   {
@@ -9,7 +10,7 @@ const routes = [
   }, {
     path: '/datastream',
     name: 'Data Stream',
-    // component: SignIn
+    component: DataStream
   },
   {
     path: '/lineage',

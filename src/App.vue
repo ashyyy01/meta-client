@@ -43,7 +43,8 @@ export default {
   color: #2c3e50;
 }
 .meta-body {
-  margin-left: 3.1rem;
-  border: 2px red solid;
+  margin: 1rem 1rem 1rem 3.5rem;
+  max-width: -webkit-fill-available;
+  /* border: 2px red solid; */
 }
 </style>

@@ -1,0 +1,543 @@
+package com.example.data;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "M_DATA_STREAM")
+public class Model {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	Long id;
+
+	@Column(name = "MPNG_REF_NM")
+	String mappingReferenceName;
+
+	@Column(name = "MPNG_REF_KEY")
+	String mappingReferenceKey;
+
+	@Column(name = "DATA_CLAS")
+	String dataClassification;
+
+	@Column(name = "MSTR_SRC_OF_TRTH")
+	String masterSourceOfTruth;
+
+	@Column(name = "BDM_DATA_ELEM_NM")
+	String bdmDataElementName;
+
+	@Column(name = "RQRMNT_REF_NUM")
+	String requirementRefNumber;
+
+	@Column(name = "DL_SRC_OBJ_LOGICAL_NM")
+	String dlSourceObjectLogicalName;
+
+	@Column(name = "DL_SRC_COL_NM")
+	String dlSourceColumnName;
+
+	@Column(name = "DL_TFM_RULE_TYPE")
+	String dlTransformationRuleType;
+
+	@Column(name = "DL_TFM_RULE_TECH")
+	String dlTransformationRuleTech;
+
+	@Column(name = "SRC_TYPE")
+	String sourceType;
+
+	@Column(name = "SRC_NM")
+	String sourceName;
+
+	@Column(name = "SRC_OBJ_LOGICAL_NM")
+	String sourceObjectLogicalName;
+
+	@Column(name = "SRC_COL_NM")
+	String sourceColumnName;
+
+	@Column(name = "SRC_DATA_TYPE")
+	String sourceDataType;
+
+	@Column(name = "SRC_DATA_LEN")
+	String sourceDataLength;
+
+	@Column(name = "SRC_DATA_PREC")
+	String sourceDataPrecision;
+
+	@Column(name = "SRC_CTRY")
+	String sourceCountryInstance;
+
+	@Column(name = "SRC_SAMPLE_VAL")
+	String sourceSampleValues;
+
+	@Column(name = "HIVE_OBJ_NM")
+	String hiveObjectName;
+
+	@Column(name = "HIVE_COL_NM")
+	String hiveColumnName;
+
+	@Column(name = "HIVE_DATA_TYPE_WITH_LEN")
+	String hiveDataTypeWithLength;
+
+	@Column(name = "TFM_RULE_BUSN")
+	String transformationRuleBusiness;
+
+	@Column(name = "TGT_TYPE")
+	String targetType;
+
+	@Column(name = "TGT_NM")
+	String targetName;
+
+	@Column(name = "TGT_OBJ_LOGICAL_NM")
+	String targetObjectLogicalName;
+
+	@Column(name = "TGT_COL_LOGICAL_NM")
+	String targetColumnLogicalName;
+
+	@Column(name = "TGT_OBJ_NM")
+	String targetObjectName;
+
+	@Column(name = "TGT_COL_NM")
+	String targetColumnName;
+
+	@Column(name = "TGT_COL_DESC")
+	String targetColumnDesc;
+
+	@Column(name = "TGT_DATA_TYPE_with_LEN")
+	String targetDataTypeWithLength;
+
+	@Column(name = "TGT_DATA_FMT")
+	String targetDataFormat;
+
+	@Column(name = "TGT_PRMRY_KEY_DTL")
+	String targetPrimaryKeyDetail;
+
+	@Column(name = "TGT_FRGN_KEY_DTL")
+	String targetForeignKeyDetail;
+
+	@Column(name = "TGT_Null_VAL_OPT")
+	String targetNullValueOption;
+
+	@Column(name = "TGT_SAMPLE_VAL")
+	String targetSampleValues;
+
+	@Column(name = "TGT_DATA_DMN")
+	String targetDataDomain;
+
+	@Column(name = "TFM_RULE_TYPE")
+	String transformationRuleType;
+
+	@Column(name = "TFM_RULE_TECH")
+	String transformationRuleTechnical;
+
+	@Column(name = "Bkey_Bmap")
+	String bkeyBmap;
+
+	@Column(name = "DMN")
+	String domain;
+
+	@Column(name = "MPNG_RLS")
+	String mappingRelease;
+
+	@Column(name = "CHNG_TYPE")
+	String changeType;
+
+	@Column(name = "CHNG_DT")
+	String changeDate;
+
+	@Column(name = "CHNG_By")
+	String changeBy;
+
+	@Column(name = "Drop")
+	String drop;
+
+	@Column(name = "T15_MPNG_REF_NM")
+	String t15MappingReference;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getMappingReferenceName() {
+		return mappingReferenceName;
+	}
+
+	public void setMappingReferenceName(String mappingReferenceName) {
+		this.mappingReferenceName = mappingReferenceName;
+	}
+
+	public String getMappingReferenceKey() {
+		return mappingReferenceKey;
+	}
+
+	public void setMappingReferenceKey(String mappingReferenceKey) {
+		this.mappingReferenceKey = mappingReferenceKey;
+	}
+
+	public String getDataClassification() {
+		return dataClassification;
+	}
+
+	public void setDataClassification(String dataClassification) {
+		this.dataClassification = dataClassification;
+	}
+
+	public String getMasterSourceOfTruth() {
+		return masterSourceOfTruth;
+	}
+
+	public void setMasterSourceOfTruth(String masterSourceOfTruth) {
+		this.masterSourceOfTruth = masterSourceOfTruth;
+	}
+
+	public String getBdmDataElementName() {
+		return bdmDataElementName;
+	}
+
+	public void setBdmDataElementName(String bdmDataElementName) {
+		this.bdmDataElementName = bdmDataElementName;
+	}
+
+	public String getRequirementRefNumber() {
+		return requirementRefNumber;
+	}
+
+	public void setRequirementRefNumber(String requirementRefNumber) {
+		this.requirementRefNumber = requirementRefNumber;
+	}
+
+	public String getSourceType() {
+		return sourceType;
+	}
+
+	public void setSourceType(String sourceType) {
+		this.sourceType = sourceType;
+	}
+
+	public String getSourceName() {
+		return sourceName;
+	}
+
+	public void setSourceName(String sourceName) {
+		this.sourceName = sourceName;
+	}
+
+	public String getDlSourceObjectLogicalName() {
+		return dlSourceObjectLogicalName;
+	}
+
+	public void setDlSourceObjectLogicalName(String dlSourceObjectLogicalName) {
+		this.dlSourceObjectLogicalName = dlSourceObjectLogicalName;
+	}
+
+	public String getDlSourceColumnName() {
+		return dlSourceColumnName;
+	}
+
+	public void setDlSourceColumnName(String dlSourceColumnName) {
+		this.dlSourceColumnName = dlSourceColumnName;
+	}
+
+	public String getSourceObjectLogicalName() {
+		return sourceObjectLogicalName;
+	}
+
+	public void setSourceObjectLogicalName(String sourceObjectLogicalName) {
+		this.sourceObjectLogicalName = sourceObjectLogicalName;
+	}
+
+	public String getSourceColumnName() {
+		return sourceColumnName;
+	}
+
+	public void setSourceColumnName(String sourceColumnName) {
+		this.sourceColumnName = sourceColumnName;
+	}
+
+	public String getDlTransformationRuleType() {
+		return dlTransformationRuleType;
+	}
+
+	public void setDlTransformationRuleType(String dlTransformationRuleType) {
+		this.dlTransformationRuleType = dlTransformationRuleType;
+	}
+
+	public String getDlTransformationRuleTech() {
+		return dlTransformationRuleTech;
+	}
+
+	public void setDlTransformationRuleTech(String dlTransformationRuleTech) {
+		this.dlTransformationRuleTech = dlTransformationRuleTech;
+	}
+
+	public String getSourceDataType() {
+		return sourceDataType;
+	}
+
+	public void setSourceDataType(String sourceDataType) {
+		this.sourceDataType = sourceDataType;
+	}
+
+	public String getSourceDataLength() {
+		return sourceDataLength;
+	}
+
+	public void setSourceDataLength(String sourceDataLength) {
+		this.sourceDataLength = sourceDataLength;
+	}
+
+	public String getSourceDataPrecision() {
+		return sourceDataPrecision;
+	}
+
+	public void setSourceDataPrecision(String sourceDataPrecision) {
+		this.sourceDataPrecision = sourceDataPrecision;
+	}
+
+	public String getSourceCountryInstance() {
+		return sourceCountryInstance;
+	}
+
+	public void setSourceCountryInstance(String sourceCountryInstance) {
+		this.sourceCountryInstance = sourceCountryInstance;
+	}
+
+	public String getSourceSampleValues() {
+		return sourceSampleValues;
+	}
+
+	public void setSourceSampleValues(String sourceSampleValues) {
+		this.sourceSampleValues = sourceSampleValues;
+	}
+
+	public String getHiveObjectName() {
+		return hiveObjectName;
+	}
+
+	public void setHiveObjectName(String hiveObjectName) {
+		this.hiveObjectName = hiveObjectName;
+	}
+
+	public String getHiveColumnName() {
+		return hiveColumnName;
+	}
+
+	public void setHiveColumnName(String hiveColumnName) {
+		this.hiveColumnName = hiveColumnName;
+	}
+
+	public String getHiveDataTypeWithLength() {
+		return hiveDataTypeWithLength;
+	}
+
+	public void setHiveDataTypeWithLength(String hiveDataTypeWithLength) {
+		this.hiveDataTypeWithLength = hiveDataTypeWithLength;
+	}
+
+	public String getTransformationRuleBusiness() {
+		return transformationRuleBusiness;
+	}
+
+	public void setTransformationRuleBusiness(String transformationRuleBusiness) {
+		this.transformationRuleBusiness = transformationRuleBusiness;
+	}
+
+	public String getTargetType() {
+		return targetType;
+	}
+
+	public void setTargetType(String targetType) {
+		this.targetType = targetType;
+	}
+
+	public String getTargetName() {
+		return targetName;
+	}
+
+	public void setTargetName(String targetName) {
+		this.targetName = targetName;
+	}
+
+	public String getTargetObjectLogicalName() {
+		return targetObjectLogicalName;
+	}
+
+	public void setTargetObjectLogicalName(String targetObjectLogicalName) {
+		this.targetObjectLogicalName = targetObjectLogicalName;
+	}
+
+	public String getTargetColumnLogicalName() {
+		return targetColumnLogicalName;
+	}
+
+	public void setTargetColumnLogicalName(String targetColumnLogicalName) {
+		this.targetColumnLogicalName = targetColumnLogicalName;
+	}
+
+	public String getTargetObjectName() {
+		return targetObjectName;
+	}
+
+	public void setTargetObjectName(String targetObjectName) {
+		this.targetObjectName = targetObjectName;
+	}
+
+	public String getTargetColumnName() {
+		return targetColumnName;
+	}
+
+	public void setTargetColumnName(String targetColumnName) {
+		this.targetColumnName = targetColumnName;
+	}
+
+	public String getTargetColumnDesc() {
+		return targetColumnDesc;
+	}
+
+	public void setTargetColumnDesc(String targetColumnDesc) {
+		this.targetColumnDesc = targetColumnDesc;
+	}
+
+	public String getTargetDataTypeWithLength() {
+		return targetDataTypeWithLength;
+	}
+
+	public void setTargetDataTypeWithLength(String targetDataTypeWithLength) {
+		this.targetDataTypeWithLength = targetDataTypeWithLength;
+	}
+
+	public String getTargetDataFormat() {
+		return targetDataFormat;
+	}
+
+	public void setTargetDataFormat(String targetDataFormat) {
+		this.targetDataFormat = targetDataFormat;
+	}
+
+	public String getTargetPrimaryKeyDetail() {
+		return targetPrimaryKeyDetail;
+	}
+
+	public void setTargetPrimaryKeyDetail(String targetPrimaryKeyDetail) {
+		this.targetPrimaryKeyDetail = targetPrimaryKeyDetail;
+	}
+
+	public String getTargetForeignKeyDetail() {
+		return targetForeignKeyDetail;
+	}
+
+	public void setTargetForeignKeyDetail(String targetForeignKeyDetail) {
+		this.targetForeignKeyDetail = targetForeignKeyDetail;
+	}
+
+	public String getTargetNullValueOption() {
+		return targetNullValueOption;
+	}
+
+	public void setTargetNullValueOption(String targetNullValueOption) {
+		this.targetNullValueOption = targetNullValueOption;
+	}
+
+	public String getTargetSampleValues() {
+		return targetSampleValues;
+	}
+
+	public void setTargetSampleValues(String targetSampleValues) {
+		this.targetSampleValues = targetSampleValues;
+	}
+
+	public String getTargetDataDomain() {
+		return targetDataDomain;
+	}
+
+	public void setTargetDataDomain(String targetDataDomain) {
+		this.targetDataDomain = targetDataDomain;
+	}
+
+	public String getTransformationRuleType() {
+		return transformationRuleType;
+	}
+
+	public void setTransformationRuleType(String transformationRuleType) {
+		this.transformationRuleType = transformationRuleType;
+	}
+
+	public String getTransformationRuleTechnical() {
+		return transformationRuleTechnical;
+	}
+
+	public void setTransformationRuleTechnical(String transformationRuleTechnical) {
+		this.transformationRuleTechnical = transformationRuleTechnical;
+	}
+
+	public String getBkeyBmap() {
+		return bkeyBmap;
+	}
+
+	public void setBkeyBmap(String bkeyBmap) {
+		this.bkeyBmap = bkeyBmap;
+	}
+
+	public String getDomain() {
+		return domain;
+	}
+
+	public void setDomain(String domain) {
+		this.domain = domain;
+	}
+
+	public String getMappingRelease() {
+		return mappingRelease;
+	}
+
+	public void setMappingRelease(String mappingRelease) {
+		this.mappingRelease = mappingRelease;
+	}
+
+	public String getChangeType() {
+		return changeType;
+	}
+
+	public void setChangeType(String changeType) {
+		this.changeType = changeType;
+	}
+
+	public String getChangeDate() {
+		return changeDate;
+	}
+
+	public void setChangeDate(String changeDate) {
+		this.changeDate = changeDate;
+	}
+
+	public String getChangeBy() {
+		return changeBy;
+	}
+
+	public void setChangeBy(String changeBy) {
+		this.changeBy = changeBy;
+	}
+
+	public String getDrop() {
+		return drop;
+	}
+
+	public void setDrop(String drop) {
+		this.drop = drop;
+	}
+
+	public String getT15MappingReference() {
+		return t15MappingReference;
+	}
+
+	public void setT15MappingReference(String t15MappingReference) {
+		this.t15MappingReference = t15MappingReference;
+	}
+
+}
